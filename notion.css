@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+a:visited {
+	color: #D0484B;
+}
+
+.icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    position: absolute;
+    border: 1px solid grey;
+    background-image: url('https://willdotjpg.gay/images/misc/jp2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: lightgoldenrodyellow;
+    background-position: center;
+    margin-left: 100px;
+    margin-top: 140px;
+}
+
+.header {
+    width: 100%;
+    height: 200px;
+    background-image: url('https://willdotjpg.gay/images/backgrounds/c0653d667d904006dbccef373a82776641dcae96.png');
+    background-repeat: repeat;
+}
+
+.headertxt {
+    position: absolute;
+    margin-top: 240px;
+    margin-left: 100px;
+    font-size: 21px;
+}
+
+.column1 {
+    width: 300px;
+    height: 750px;
+    margin-left: 100px;
+    margin-top: 95px;
+    background-color: 
+    
+}
+
+.column2 {
+    width: 850px;
+    height: 750px;
+    position: absolute;
+    margin-top: -750px;
+    margin-left: 450px;
+}
+
+.quote {
+    background-color: #FAFFC6;
+    height: 66px;
+    width: 535px;
+    position: absolute;
+    margin-left: 310px;
+    font-style: italic;
+    color: #555;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.links {
+    width: 535px;
+    height: 460px;
+    position: absolute;
+    margin-left: 310px;
+    margin-top: 85px;
+    box-sizing: border-box;
+}
+
+.column3 {
+    width: 300px;
+    height: 750px;
+    position: absolute;
+    margin-top: -750px;
+    margin-left: 1350px;
+}
+
+.cal {
+    width: 200px;
+    height: 200px;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: #F7941D;
+}
+
+h1 {
+    background-color: bisque;
+    text-align: center;
+    font-size: 25px;
+}
+
+h2 {
+    font-weight: 100;
+    font-size: 20px;
+}
+
+li {
+    margin-left: 15px;
+    list-style: none;
+}
