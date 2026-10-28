@@ -12,8 +12,8 @@ h1, h2, h3 {
     color: #463C37;
 }
 div.titulo-icono img{
-    width: 10%;
-    height: 10%;
+    width: 20%;
+    height: 20%;
     padding-left: 2%;
     padding-right: 2%;
 }
@@ -88,6 +88,90 @@ main article h1{
     grid-column-start:1;
     grid-column-end:3;
 }
+/* Reglas para tablets (máximo 768px) */
+@media (max-width: 768px) {
+    #cuerpo {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        display: grid;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-columns: 1fr 1fr;
+    }
+    div.titulo-icono img{
+        width: 40%;
+        height: 40%;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    #col_1{
+        grid-row-start:3;
+        grid-row-end:4;
+        grid-column-start:1;
+        grid-column-end:4;
+    }
+    #col_2{
+        grid-row-start:4;
+        grid-row-end:5;
+        grid-column-start:1;
+        grid-column-end:4;
+    }
+    #saludo{
+        grid-row-start:1;
+        grid-row-end:2;
+        grid-column-start:1;
+        grid-column-end:3;
+    }
+    #sobre_mi {
+        padding-top: 1%;
+        padding-left: 1%;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
 
+/* Reglas para teléfonos móviles (máximo 480px) */
+@media (max-width: 480px) {
+    #cuerpo {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        display: grid;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-columns: 1fr 1fr;
+    }
+    div.titulo-icono img{
+        width: 40%;
+        height: 40%;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    #col_1{
+        grid-row-start:3;
+        grid-row-end:4;
+        grid-column-start:1;
+        grid-column-end:4;
+    }
+    #col_2{
+        grid-row-start:4;
+        grid-row-end:5;
+        grid-column-start:1;
+        grid-column-end:4;
+    }
+    #saludo{
+        grid-row-start:1;
+        grid-row-end:2;
+        grid-column-start:1;
+        grid-column-end:3;
+    }
+    #sobre_mi {
+        padding-top: 1%;
+        padding-left: 1%;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
 
 
