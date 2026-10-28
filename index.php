@@ -1,0 +1,257 @@
+<?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+require_once __DIR__ .'/includes/config.php';
+
+$tituloPagina = 'Portada';
+
+// Usamos <<<EOS para definir bloques de HTML grandes en una variable
+$contenidoPrincipal = <<<EOS
+	<h1>Alec Sánchez Gaitán</h1>
+	<div class="cuerpo" id="cuerpo">
+	    <div class="saludo" id="saludo">
+	        <h2>¡Bienvenido!</h2>
+            <p>En esta página, podrás navegar y comprobar todos los proyectos en los que he participado, así como las experiencias laborales que he tenido y mi educación.</p>
+	    </div>
+	    <div class="sobre_mi" id="sobre_mi">
+            <li>
+                <h2>Sobre mí:</h2>
+                    <p>Estudiante de informática con especial interés en el diseño, desarrollo y gestión de bases de datos, así como en el desarrollo backend, las aplicaciones web, los sistemas operativos y las redes. He participado en proyectos que requerían coordinación y colaboración, adquiriendo competencias de trabajo en equipo, organización y planificación. Destaco por mi capacidad de aprendizaje, mi compromiso y mi interés por seguir desarrollándome profesionalmente en el ámbito tecnológico.</p>
+            </li>
+	    </div>
+	    <div class="col_1" id="col_1">
+            <div class="proyectos" id="proyectos">
+                <li><h2>Proyectos:</h2></li>
+                <p class="ampliarProyectos" id="ampliarProyectos">Ampliar (+)</p>
+                <div class="textoProyectos" id="textoProyectos">
+                <ol>
+                    <li>
+                        <h3>Another summer</h3>
+                        <ul>
+                            <li>
+                                <p>Videojuego narrativo desarrollado en un mes como solo programmer para la Comfy Jam:Summer de 2026.</p>
+                                <p>Puesto 32 en el ranking del organizador de la Jam.</p>
+                                <a href="https://fwoggydweller.itch.io/another-summer">Link al itch.io del juego</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Gonzo</h3>
+                        <ul>
+                            <li>
+                                <p>Videojuego de puzles desarrollado en un fin de semana para la global gamejam de 2026.</p>
+                                <p>Primer videojuego desarrollado en Godot.</p>
+                                <a href="https://aloy5.itch.io/gonzo">Link al itch.io del juego</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Quantum subconfusion</h3>
+                        <ul>
+                            <li>
+                                <p>Videojuego de control de naves espaciales multijugador desarrollado para la gamejam ComJamon 2025.</p>
+                                <p>Desarrollado en Unity.</p>
+                                <a href="https://diegocaballero.itch.io/quantum">Link al itch.io del juego</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Necropicker</h3>
+                        <ul>
+                            <li>
+                                <p>Videojuego rogue-like desarrollado durante el segundo cuatrimestre del primer año de desarrollo de videojuegos para la asignatura de Proyectos 1, en Unity.</p>
+                                <a href="https://javipopotter.itch.io/necropicker">Link al itch.io del juego</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <h3>DreamCast</h3>
+                        <ul>
+                            <li>
+                                <p>Aplicación web en la que se gestionan contrataciones de diferentes actores, manejando una base de datos sql (mediante PostgreSQL) y conectando la lógica de la aplicación con la base de datos mediante ORM.</p>
+                                <a href="https://github.com/fwoggydweller/Proyectos_ABD/tree/main/DreamCast">Link al repositorio del proyecto</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>EUCMVision</h3>
+                        <ul>
+                            <li>
+                                <p>Aplicación web con información sobre diferentes ediciones de eurovisión, con posibilidad de crear y realizar cuestionarios sobre estas. Manejo de base de datos noSQL (MongoDB).</p>
+                                <a href="https://github.com/fwoggydweller/Proyectos_ABD/tree/main/EUCMVision">Link al repositorio del proyecto</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Fdinder</h3>
+                        <ul>
+                            <li>
+                                <p>Aplicación web de citas. Manejo de base de datos noSQL (Neo4j).</p>
+                                <a href="https://github.com/fwoggydweller/Proyectos_ABD/tree/main/FDInder">Link al repositorio del proyecto</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>FDI Bistro</h3>
+                        <ul>
+                            <li>
+                                <p>Aplicación web para la gestión de una cafetería, desarrollado durante la asignatura de Aplicaciones web.</p>
+                                <p>Desarrollado con Xampp, usando html, php, sql y javascript</p>
+                                <a href="https://github.com/arkty18/FDI_Bistro">Link al repositorio del proyecto</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Simulador de carreteras</h3>
+                        <ul>
+                            <li>
+                                <p>Simulador de tráfico desarrollado para la asignatura Tecnologías de la programación 2 del grado de ingeniería informática.</p>
+                                <p>Toma de contacto con la librería gráfica Swing de Java.</p>
+                                <a href="https://github.com/fwoggydweller/TP2Projects">Link al repositorio del proyecto</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Lemmings</h3>
+                        <ul>
+                            <li>
+                                <p>Imitación del videojuego de los lemmings desarrollada para la asignatura de Tecnología de la programación 1 del grado de ingeniería informática.</p>
+                                <p>Toma de contacto con el lenguaje de programación Java.</p>
+                                <a href="https://github.com/fwoggydweller/TOPLab">Link al repositorio del proyecto</a>
+                            </li>
+                        
+                        </ul>
+                    </li>
+                </ol>
+                </div>
+            </div>
+            <div class="experiencia" id="experiencia">
+                <li><h2>Experiencia laboral:</h2></li>
+                <p class="ampliarExperiencia" id="ampliarExperiencia">Ampliar (+)</p>
+                <div class="textoExperiencia" id="textoExperiencia">
+                    <ol>
+                        <li>
+                            <h3>Personal de limpieza en Cinesa</h3>
+                            <ul>
+                                <li>
+                                    <p>Jornada parcial</p>
+                                    <p>Junio 2025 - Septiembre 2026</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3>Cocinero en Goiko</h3>
+                            <ul>
+                                <li>
+                                    <p>Jornada parcial</p>
+                                    <p>Junio 2024 - Septiembre 2024</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3>Preparación de pedidos online en El Corte Inglés</h3>
+                            <ul>
+                                <li>
+                                    <p>Jornada parcial</p>
+                                    <p>Junio 2023 - Septiembre 2023</p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+	    </div>
+	    <div class="col_2" id="col_2">
+	        <div class="aptitudes" id="aptitudes">
+                <li><h2>Aptitudes</h2></li>
+                <ul>
+                    <li>
+                        <h3>Idiomas</h3>
+                        <ol>
+                            <li>
+                                <p>Español: Nivel nativo.</p>
+                                </li>
+                                <li>
+                                <p>Inglés: Nivel nativo.</p>
+                                </li>
+                                <li>
+                                <p>Japonés: nivel básico.</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h3>Lenguajes de programación</h3>
+                        <ol>
+                            <li>
+                                <p>C++: Alto</p>
+                                </li>
+                                <li>
+                                <p>C#: Alto</p>
+                                </li>
+                                <li>
+                                <p>Java: Alto</p>
+                                </li>
+                                <li>
+                                <p>Python: Medio</p>
+                                </li>
+                                <li>
+                                <p>Javascript: Medio</p>
+                                </li>
+                                <li>
+                                <p>HTML: Alto</p>
+                                </li>
+                                <li>
+                                <p>CSS: Alto</p>
+                                </li>
+                                <li>
+                                <p>SQL: Alto</p>
+                                </li>
+                                <li>
+                                <p>MongoDB: Medio</p>
+                                </li>
+                                <li>
+                                <p>Neo4J: Medio</p>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+            <div class="educacion" id="educacion">
+                <li><h2>Educación:</h2></li>
+                <p class="ampliarEducacion" id="ampliarEducacion">Ampliar (+)</p>
+                <div class="textoEducacion" id="textoEducacion">
+                    <ol>
+                        <li>
+                            <h3>Universidad UCM: Grado universitario en ingeniería informática.</h3>
+                            <ul>
+                                <li><p>Fecha de inicio: Septiembre de 2023</p></li>
+                                <li><p>Fecha de finalización: Mayo de 2028</p></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3>Universidad UCM: Grado universitario en desarrollo de videojuegos.</h3>
+                            <ul>
+                                <li><p>Cursé el primer año para poder convalidar asignaturas y poder así cursar el grado de ingeniería informática</p></li>
+                                <li><p>Fecha de inicio: Septiembre de 2022</p></li>
+                                <li><p>Fecha de finalización: Mayo de 2023</p></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3>IES El Álamo: ESO y Bachillerato de ciencias</h3>
+                            <ul>
+                                <li><p>Premio al mejor expediente académico de 4 de la ESO de la comunidad de Madrid.</p></li>
+                                <li><p>Fecha de inicio: Septiembre de 2016</p></li>
+                                <li><p>Fecha de finalización: Mayo de 2022</p></li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+	    </div>
+    </div>
+EOS;
+
+require __DIR__.'/includes/vistas/plantillas/plantilla.php';
+?>

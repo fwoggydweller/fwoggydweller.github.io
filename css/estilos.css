@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'Open Sauce Sans';
+}
+body {
+    font-family: 'Open Sauce Sans', sans-serif;
+}
+h1{
+    font-size: 300%;
+}
+h1, h2, h3 {
+    font-family: 'Open Sauce Sans', sans-serif;
+    color: #463C37;
+}
+div.titulo-icono img{
+    width: 10%;
+    height: 10%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+body{
+    margin-top: 5%;
+    background-color: #463C37;
+    margin-left:0;
+    margin-right:0;
+    margin-bottom:0;
+}
+
+div#contenedor main article, div#contenedor footer{
+    background-color: #FEFBEF;
+    padding-top:1%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+div#contenedor main article *{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+div#contenedor footer *{
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+p{
+    padding-bottom: 0.5%;
+    padding-top:0.5%
+}
+#ampliarSobreMi, #ampliarProyectos, #ampliarEducacion, #ampliarExperiencia{
+    color: darkred;
+}
+main article{
+    display: grid;
+    grid-template-rows: auto auto;
+}
+main article h1{
+    grid-row-start:1;
+    grid-row-end:2;
+}
+#cuerpo{
+    grid-row-start:2;
+    grid-row-end:3;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 1fr 1fr;
+}
+#col_1{
+    grid-row-start:3;
+    grid-row-end:4;
+    grid-column-start:1;
+    grid-column-end:2;
+}
+#col_2{
+    grid-row-start:3;
+    grid-row-end:4;
+    grid-column-start:2;
+    grid-column-end:4;
+}
+#saludo{
+    grid-row-start:1;
+    grid-row-end:2;
+    grid-column-start:1;
+    grid-column-end:3;
+}
+#sobre_mi{
+    padding-top: 1%;
+    padding-left: 1%;
+    grid-row-start:2;
+    grid-row-end:3;
+    grid-column-start:1;
+    grid-column-end:3;
+}
+
+
+
