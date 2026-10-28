@@ -1,3 +1,0 @@
-<aside id="sidebarIzq">
-
-</aside>
