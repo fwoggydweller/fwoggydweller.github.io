@@ -6,7 +6,6 @@
     <title><?= $tituloPagina ?></title>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script type="text/javascript" src=<?=RUTA_JS."script.js"?>></script>
-<!---    <link rel="icon" type="image/x-icon" href=<?=RUTA_IMG_PUB."IconoPaginaWeb.png"?>>--->
     <link rel="stylesheet" href=<?=RUTA_CSS."estilos.css"?>>
 </head>
 <body>
