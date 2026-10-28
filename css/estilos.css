@@ -10,6 +10,7 @@ h1{
 h1, h2, h3 {
     font-family: 'Open Sauce Sans', sans-serif;
     color: #463C37;
+    padding-top: 1%;
 }
 div.titulo-icono img{
     width: 20%;
@@ -22,14 +23,14 @@ body{
     background-color: #463C37;
     margin-left:0;
     margin-right:0;
-    margin-bottom:0;
+    padding-bottom:1%;
 }
 
 div#contenedor main article, div#contenedor footer{
     background-color: #FEFBEF;
     padding-top:1%;
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 div#contenedor main article *{
     margin-top: 0;
@@ -63,12 +64,15 @@ main article h1{
     grid-template-columns: 1fr 1fr;
 }
 #col_1{
+    padding-left: 1%;
     grid-row-start:3;
     grid-row-end:4;
     grid-column-start:1;
     grid-column-end:2;
 }
 #col_2{
+    padding-left: 5%;
+    padding-right: 1%;
     grid-row-start:3;
     grid-row-end:4;
     grid-column-start:2;
@@ -104,12 +108,14 @@ main article h1{
         padding-right: 2%;
     }
     #col_1{
+        padding-left: 5%;
         grid-row-start:3;
         grid-row-end:4;
         grid-column-start:1;
         grid-column-end:4;
     }
     #col_2{
+        padding-left: 5%;
         grid-row-start:4;
         grid-row-end:5;
         grid-column-start:1;
@@ -123,7 +129,7 @@ main article h1{
     }
     #sobre_mi {
         padding-top: 1%;
-        padding-left: 1%;
+        padding-left: 5%;
         grid-row-start: 2;
         grid-row-end: 3;
         grid-column-start: 1;
@@ -147,12 +153,14 @@ main article h1{
         padding-right: 2%;
     }
     #col_1{
+        padding-left: 5%;
         grid-row-start:3;
         grid-row-end:4;
         grid-column-start:1;
         grid-column-end:4;
     }
     #col_2{
+        padding-left: 5%;
         grid-row-start:4;
         grid-row-end:5;
         grid-column-start:1;
@@ -166,7 +174,7 @@ main article h1{
     }
     #sobre_mi {
         padding-top: 1%;
-        padding-left: 1%;
+        padding-left: 5%;
         grid-row-start: 2;
         grid-row-end: 3;
         grid-column-start: 1;
