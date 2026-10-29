@@ -2,6 +2,7 @@ $(document).ready(function(){
     let mostrarEducacion = false;
     let mostrarProyectos = false;
     let mostrarExperiencia = false;
+    let mostrarAptitudes = false;
     $("#textoEducacion").hide();
     $("#textoProyectos").hide();
     $("#textoExperiencia").hide();
