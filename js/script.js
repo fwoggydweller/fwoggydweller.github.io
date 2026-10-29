@@ -21,7 +21,7 @@ $(document).ready(function(){
         }
     })
     $("#ampliarAptitudes").click(function(){
-        if(!mostrarEducacion){
+        if(!mostrarAptitudes){
             $("#ampliarAptitudes").text("Contraer (-)");
             $("#textoAptitudes").show();
             mostrarAptitudes = true;
