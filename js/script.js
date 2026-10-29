@@ -5,6 +5,7 @@ $(document).ready(function(){
     $("#textoEducacion").hide();
     $("#textoProyectos").hide();
     $("#textoExperiencia").hide();
+    $("#textoAptitudes").hide();
 
     $("#ampliarEducacion").click(function(){
         if(!mostrarEducacion){
@@ -16,6 +17,18 @@ $(document).ready(function(){
             $("#ampliarEducacion").text("Ampliar (+)");
             $("#textoEducacion").hide();
             mostrarEducacion = false;
+        }
+    })
+    $("#ampliarAptitudes").click(function(){
+        if(!mostrarEducacion){
+            $("#ampliarAptitudes").text("Contraer (-)");
+            $("#textoAptitudes").show();
+            mostrarAptitudes = true;
+        }
+        else{
+            $("#ampliarAptitudes").text("Ampliar (+)");
+            $("#textoAptitudes").hide();
+            mostrarAptitudes = false;
         }
     })
     $("#ampliarProyectos").click(function(){
